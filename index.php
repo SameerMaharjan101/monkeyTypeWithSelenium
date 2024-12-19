@@ -9,8 +9,6 @@ use Facebook\WebDriver\WebDriverExpectedCondition;
 
 $serverUrl = 'http://localhost:4444/wd/hub';
 
-
-
 $chromeOptions = new ChromeOptions();
 $chromeOptions->addArguments(['window-size=1920x1020']);
 
@@ -54,7 +52,7 @@ try {
        usleep(100000); 
    }
 
-   sleep(10);
+   sleep(5);
 
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
